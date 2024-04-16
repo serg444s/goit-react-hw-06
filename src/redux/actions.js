@@ -20,7 +20,7 @@ export const deleteContact = (contactId) => {
 
 export const setContactsFilter = (value) => {
   return {
-    type: "contacts/setContactsFilter",
+    type: "filters/setContactsFilter",
     payload: value,
   };
 };

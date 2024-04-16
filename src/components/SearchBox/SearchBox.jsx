@@ -5,9 +5,8 @@ const SearchBox = () => {
   const dispatch = useDispatch();
 
   const handleChange = (evt) => {
-    const name = evt.target.value;
-    console.log(name);
-    dispatch(setContactsFilter(name));
+    const value = evt.target.value;
+    dispatch(setContactsFilter(value));
   };
 
   return (
