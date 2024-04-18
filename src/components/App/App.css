@@ -40,3 +40,40 @@
 .read-the-docs {
   color: #888;
 }
+
+body {
+  background: linear-gradient(to bottom, black, darkslategray);
+}
+
+.container {
+  background-color: white;
+  border-radius: 40px;
+  margin: 0 auto;
+  padding: 4px;
+  min-height: 800px;
+}
+
+.title {
+  color: beige;
+  margin-top: 0;
+}
+
+.phone {
+  border: 2px solid black;
+  border-radius: 40px;
+  margin: 0 auto;
+  padding: 12px;
+  padding-bottom: 4px;
+  min-height: 790px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.bottom {
+  width: 96px;
+  height: 4px;
+  background-color: rgba(20, 16, 16, 0.416);
+  border-radius: 32px;
+  margin: 0 auto;
+}

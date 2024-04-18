@@ -1,5 +1,6 @@
 import { useDispatch } from "react-redux";
 import { addContact } from "../../redux/actions";
+import css from "./ContactsForm.module.css";
 
 const ContactForm = () => {
   const dispatch = useDispatch();
@@ -14,18 +15,17 @@ const ContactForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <label>
-        Name
-        <input type="text" name="name" />
-      </label>
-
-      <label>
-        Number
-        <input type="number" name="number" />
-      </label>
-
-      <button type="submit"> Add contact</button>
+    <form onSubmit={handleSubmit} className={css.form}>
+      <input type="text" name="name" placeholder="Name" className={css.input} />
+      <input
+        type="number"
+        name="number"
+        placeholder="Number"
+        className={css.input}
+      />
+      <button type="submit" className={css.btn}>
+        Add
+      </button>
     </form>
   );
 };

@@ -5,12 +5,19 @@ import "./App.css";
 
 function App() {
   return (
-    <div>
-      <h1>Phonebook</h1>
-      <ContactForm />
-      <SearchBox />
-      <ContactList />
-    </div>
+    <>
+      <h1 className="title">My phonebook</h1>
+      <div className="container">
+        <div className="phone">
+          <div>
+            <ContactForm />
+            <SearchBox />
+            <ContactList />
+          </div>
+          <div className="bottom"></div>
+        </div>
+      </div>
+    </>
   );
 }
 
