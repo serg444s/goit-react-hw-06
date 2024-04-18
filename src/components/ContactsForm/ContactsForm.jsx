@@ -16,12 +16,19 @@ const ContactForm = () => {
 
   return (
     <form onSubmit={handleSubmit} className={css.form}>
-      <input type="text" name="name" placeholder="Name" className={css.input} />
+      <input
+        type="text"
+        name="name"
+        placeholder="Name"
+        className={css.input}
+        required
+      />
       <input
         type="number"
         name="number"
         placeholder="Number"
         className={css.input}
+        required
       />
       <button type="submit" className={css.btn}>
         Add
