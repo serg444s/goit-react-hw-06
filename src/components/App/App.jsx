@@ -4,6 +4,7 @@ import SearchBox from "../SearchBox/SearchBox";
 import { Toaster } from "react-hot-toast";
 import { useSelector } from "react-redux";
 import { selectContacts } from "../../redux/selectors";
+import Message from "../Message/Message";
 
 import "./App.css";
 
@@ -19,11 +20,7 @@ function App() {
           <div>
             <ContactForm />
             <SearchBox />
-            {contacts.length > 0 ? (
-              <ContactList />
-            ) : (
-              <p>There are no contacts...</p>
-            )}
+            {contacts.length > 0 ? <ContactList /> : <Message />}
           </div>
           <div className="bottom"></div>
         </div>
