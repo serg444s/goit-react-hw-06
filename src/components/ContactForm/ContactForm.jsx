@@ -1,5 +1,5 @@
 import { useDispatch } from "react-redux";
-import css from "./ContactsForm.module.css";
+import css from "./ContactForm.module.css";
 import { addContact } from "../../redux/contactsSlice";
 import toast from "react-hot-toast";
 

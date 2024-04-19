@@ -1,10 +1,10 @@
 import ContactList from "../ContactList/ContactList";
-import ContactForm from "../ContactsForm/ContactsForm";
-import SearchBox from "../SearchBox/SearchBox";
 import { Toaster } from "react-hot-toast";
 import { useSelector } from "react-redux";
 import { selectContacts } from "../../redux/selectors";
 import Message from "../Message/Message";
+import SearchBox from "../SearchBox/SearchBox";
+import ContactForm from "../ContactForm/ContactForm";
 
 import "./App.css";
 
