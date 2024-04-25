@@ -7,6 +7,7 @@ import SearchBox from "../SearchBox/SearchBox";
 import ContactForm from "../ContactForm/ContactForm";
 
 import "./App.css";
+import ScrollToTopButton from "../ScrollToTopButton/ScrollToTopButton";
 
 function App() {
   const contacts = useSelector(selectContacts);
@@ -25,6 +26,7 @@ function App() {
           <div className="bottom"></div>
         </div>
       </div>
+      <ScrollToTopButton />
     </>
   );
 }
